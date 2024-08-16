@@ -4,35 +4,26 @@ void main(){
   //Nesne oluşturma
   var bmw = Araba(renk: "Mavi", hiz: 200, calisiyorMu: true);
   
-  print("-------------------------");
-  print("Renk         : ${bmw.renk}");
-  print("Hız         : ${bmw.hiz}");
-  print("Çalışıyor mu         : ${bmw.calisiyorMu}");
+  bmw.bilgiAl();
 
-  //Değer atama
-  bmw.renk = "Kırmızı";
-  bmw.hiz = 260;
-  bmw.calisiyorMu = false;
+  bmw.renk = "Yeşil";
+  bmw.hiz = 180;
+  bmw.calisiyorMu = true;
 
-  print("-------------------------");
-  print("Renk         : ${bmw.renk}");
-  print("Hız         : ${bmw.hiz}");
-  print("Çalışıyor mu         : ${bmw.calisiyorMu}");
+ bmw.bilgiAl();
+ bmw.calistir();
+ bmw.bilgiAl();
+ bmw.hizlan(30);
+ bmw.yavasla(15);
 
   var sahin = Araba(renk: "Beyaz", hiz: 0 , calisiyorMu: false);
 
-  print("-------------------------");
-  print("Renk         : ${sahin.renk}");
-  print("Hız         : ${sahin.hiz}");
-  print("Çalışıyor mu         : ${sahin.calisiyorMu}");
+  sahin.bilgiAl();
 
   sahin.renk = "Sarı";
   sahin.hiz = 80;
   sahin.calisiyorMu = true;
 
-  print("-------------------------");
-  print("Renk         : ${sahin.renk}");
-  print("Hız         : ${sahin.hiz}");
-  print("Çalışıyor mu         : ${sahin.calisiyorMu}");
+  sahin.bilgiAl();
 
 }
