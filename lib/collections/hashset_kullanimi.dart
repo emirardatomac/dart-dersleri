@@ -21,9 +21,10 @@ void main(){
     print("Sonuc : ${meyve}");
   }
 
-  for(var i = 0 ; i < meyveler.length ; i++){
-    print("$i.-> ${meyveler.elementAt(i)}");
+  for(var i = 0; i < meyveler.length; i++){
+    print("$i -> ${meyveler.elementAt(i)}");
   }
+
 
   meyveler.remove("Elma");
   print(meyveler);
